@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TuftyShop — Tappeti</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>TuftyShop</h1>
+        <p class="tag">Tappeti | Design minimal & sostenibile</p>
+      </div>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#galleria">Galleria</a>
+        <a href="#chi-siamo">Chi siamo</a>
+        <a href="#contatti">Contatti</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-text">
+        <h2>Benvenuta da TuftyShop</h2>
+        <p>Collezioni di tappeti moderni, fatti per durare. Linee pulite, materiali scelti con cura e un tocco di eleganza funzionale per la tua casa.</p>
+        <p class="cta-note">Scorri la galleria per vedere i nostri modelli.</p>
+      </div>
+      <div class="hero-image" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1549187774-b4e9b0445b3e?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Tappeto moderno su pavimento">
+      </div>
+    </section>
+
+    <section id="galleria" class="container galleria">
+      <h3>Galleria</h3>
+      <p class="section-sub">Alcuni modelli selezionati</p>
+      <div class="grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Tappeto 1">
+          <div class="card-body">
+            <h4>Modello Aster</h4>
+            <p>Dimensioni: 160×230 cm · Colori: beige, grigio</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1549187774-b4e9b0445b3e?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Tappeto 2">
+          <div class="card-body">
+            <h4>Modello Tuft</h4>
+            <p>Dimensioni: 120×180 cm · Colori: naturale, nero</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1522661067900-02c5f8f2f166?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Tappeto 3">
+          <div class="card-body">
+            <h4>Modello Linea</h4>
+            <p>Dimensioni: 200×300 cm · Colori: crema, sabbia</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1600585154342-3b0f4a2dbf2f?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Tappeto 4">
+          <div class="card-body">
+            <h4>Modello Minimal</h4>
+            <p>Dimensioni: 150×240 cm · Colori: grigio chiaro</p>
+          </div>
+        </article>
+      </div>
+      <p class="note">Se vuoi specifiche o prezzi, scrivici ai contatti qui sotto.</p>
+    </section>
+
+    <section id="chi-siamo" class="container about">
+      <h3>Chi siamo</h3>
+      <p>TuftyShop nasce dall'amore per i tessuti e il design essenziale. Scegliamo materiali resistenti e metodi produttivi responsabili per creare tappeti che durano nel tempo, adattandosi a spazi moderni e classici.</p>
+      <p class="small">Made in Italy • Produzione sostenibile • Personalizzazioni su richiesta</p>
+    </section>
+
+    <section id="contatti" class="container contacts">
+      <h3>Contatti</h3>
+      <p>Per informazioni, preventivi o collaborazioni:</p>
+      <ul class="contact-list">
+        <li><strong>Email:</strong> <a href="mailto:info@tuftyshop.it">info@tuftyshop.it</a></li>
+        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/tuftyshop" target="_blank" rel="noopener">instagram.com/tuftyshop</a></li>
+        <li><strong>Telefono:</strong> +39 333 123 4567</li>
+      </ul>
+
+      <form class="contact-form" action="mailto:info@tuftyshop.it" method="post" enctype="text/plain">
+        <label>Nome <input type="text" name="name" required></label>
+        <label>Email <input type="email" name="email" required></label>
+        <label>Messaggio <textarea name="message" rows="5" required></textarea></label>
+        <button type="submit">Invia</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> TuftyShop — Tappeti. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

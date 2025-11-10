@@ -1,0 +1,5 @@
+Suggerimenti immagini gratuite (Usa Unsplash / Pexels):
+1) https://unsplash.com/photos/6anudmpILw4 (tappeti / design)
+2) https://unsplash.com/photos/7okkFhxrxNw (interior)
+3) https://unsplash.com/photos/PDX_a_82obo (texture tappeto)
+Sostituisci gli URL negli <img src=> con le tue foto per personalizzare.
