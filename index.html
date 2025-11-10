@@ -120,5 +120,24 @@ buttons.forEach(btn => {
   });
 });
 </script>
+<script>
+const buttons = document.querySelectorAll('.filter-btn');
+const cards = document.querySelectorAll('.grid .card');
+
+buttons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const filter = btn.dataset.filter;
+
+    cards.forEach(card => {
+      const categories = card.dataset.category.split(' ');
+      if(filter === 'all' || categories.includes(filter)) {
+        card.classList.remove('hide'); // mostra la card con animazione
+      } else {
+        card.classList.add('hide'); // nasconde la card con animazione
+      }
+    });
+  });
+});
+</script>
 </body>
 </html>
