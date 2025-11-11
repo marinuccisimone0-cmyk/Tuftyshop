@@ -145,15 +145,25 @@ footer.site-footer {
   transform: translateY(20px);
   pointer-events: none;
 }
-/* --- MENU HAMBURGER --- */
+/* --- HEADER FISSO --- */
 header {
+  position: fixed;       /* la rende fissa in alto */
+  top: 0;
+  left: 0;
+  width: 100%;           /* occupa tutta la larghezza */
+  z-index: 1000;         /* sopra tutti gli altri elementi */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
   background-color: #d9d9d9; /* sfondo grigio chiaro */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* ombra sottile */
 }
 
+/* Aggiungi spazio in cima al corpo per non coprire i contenuti */
+body {
+  padding-top: 70px; /* altezza header */
+}
 .logo {
   font-size: 1.6rem;
   font-weight: bold;
